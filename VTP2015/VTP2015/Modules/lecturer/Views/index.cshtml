@@ -1,0 +1,12 @@
+﻿
+@model IEnumerable<VTP2015.Modules.Lecturer.ViewModels.RequestListViewModel>
+@{
+    ViewBag.Title = "Docent";
+}
+
+<br/>
+
+@CustomHelpers.NavigationLecturer(Convert.ToInt32(ViewBag.AantalAanvragen))
+
+
+@Scripts.Render("~/bundles/lecturer")

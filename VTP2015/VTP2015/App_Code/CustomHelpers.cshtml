@@ -1,0 +1,23 @@
+﻿@helper NavigationLecturer(int Aanvragen)
+{
+    <div class="container body-content">
+        <div class="container-fix">
+
+            <div class="panel panel-default clearfix">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Docent</h3>
+                </div>
+                <div class="panel-body">
+                    @if (Aanvragen > 0)
+                    {<a class="btn btn-danger" href="/Lecturer/OpenRequests">Openstaande aanvragen<span class="badge badge-success" style="margin-left: 1em">@Aanvragen</span></a>}
+                    else
+                    {<a class="btn btn-primary" href="/Lecturer/OpenRequests">Openstaande aanvragen<span class="badge badge-success" style="margin-left: 1em">@Aanvragen</span></a>}
+
+                    <a class="btn btn-primary" href="/Lecturer/Archive">Reeds behandelde aanvragen</a>
+                    <a class="btn btn-primary" href="/Lecturer/Partim">Partims verwijderen</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+}
